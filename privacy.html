@@ -43,8 +43,10 @@
   <h2>The camera</h2>
   <p>The app asks for camera access only when you use a scanning feature, and
   uses it only to read bottle barcodes and photograph wine labels. It never
-  reads or writes your photo library, and label photos are not saved by the
-  app — they are used once, as described below, and discarded.</p>
+  reads or writes your photo library. The full-size label photo is used once,
+  as described below, and discarded — a small thumbnail cropped from it is
+  kept with the wine you save, so you can recognize it at a glance in your
+  cellar and collection lists.</p>
 
   <h2>Barcode lookups</h2>
   <p>When you scan a barcode, the app sends the barcode number — nothing
@@ -62,7 +64,11 @@
   <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>'s Claude API
   to read the label and return the producer, name, and vintage as a suggestion.
   The server does not store or log your photos. Anthropic processes the photo to generate the suggestion and handles it under its own privacy policy; we use Anthropic's standard API service, and photos are not used to train its models.
-  Nothing is added to your cellar until you review and save it.</p>
+  Nothing is added to your cellar until you review and save it. If you save
+  the wine, a small thumbnail (not the full-size photo) is kept with it —
+  on your device, and on your sync server if you use one — so you can
+  recognize the bottle later; the full-size photo itself is never stored
+  anywhere.</p>
 
   <h2>Optional sync</h2>
   <p>If you configure a sync server in Settings, your inventory is backed up
