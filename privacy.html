@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Cellar Door: Uncorked</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; max-width: 40em; padding: 2.5em 1.25em 4em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Georgia, serif;
+    line-height: 1.6; color: #2b2622; background: #faf7f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e2d9; background: #191613; }
+    a { color: #d4b98c; }
+    hr, footer { border-color: #3a342e; color: #8a8177; }
+  }
+  h1 { font-size: 1.6em; font-weight: 600; margin-bottom: 0.1em; }
+  h2 { font-size: 1.15em; font-weight: 600; margin-top: 2em; }
+  .meta { margin-top: 0; opacity: 0.7; font-size: 0.9em; }
+  a { color: #7a5c2e; }
+  ul { padding-left: 1.25em; }
+  hr { border: none; border-top: 1px solid #ddd5c8; margin: 2.5em 0 1.5em; }
+  footer { font-size: 0.85em; opacity: 0.7; }
+</style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Cellar Door: Uncorked &middot; Effective August 21, 2026</p>
+
+  <p>Cellar Door keeps your wine cellar on your phone. There is no account, no
+  sign-up, no advertising, no analytics, and no tracking. Most of what the app
+  knows never leaves your device. This page describes the few cases where
+  something does.</p>
+
+  <h2>What stays on your device</h2>
+  <p>Your inventory — wines, shelf placements, and poured history — is stored
+  in a local file on your phone. If you configure a sync server, its address
+  and API key are stored in the iOS Keychain. Deleting the app deletes all of
+  this.</p>
+
+  <h2>The camera</h2>
+  <p>The app asks for camera access only when you use a scanning feature, and
+  uses it only to read bottle barcodes and photograph wine labels. It never
+  reads or writes your photo library, and label photos are not saved by the
+  app — they are used once, as described below, and discarded.</p>
+
+  <h2>Barcode lookups</h2>
+  <p>When you scan a barcode, the app sends the barcode number — nothing
+  else — to two public product databases,
+  <a href="https://world.openfoodfacts.org/privacy">Open Food Facts</a> and
+  <a href="https://www.upcitemdb.com/terms">UPCitemdb</a>, to pre-fill the
+  wine's name for you to confirm. Neither service receives anything that
+  identifies you beyond the ordinary technical details of a web request. You
+  can turn these lookups off in Settings.</p>
+
+  <h2>Label photos</h2>
+  <p>If you use label-photo identification, the photo (and optional
+  back-label photo) is sent over an encrypted connection to the app's
+  wine-identification server, which passes it to
+  <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>'s Claude API
+  to read the label and return the producer, name, and vintage as a suggestion.
+  The server does not store or log your photos. Anthropic processes the photo to generate the suggestion and handles it under its own privacy policy; we use Anthropic's standard API service, and photos are not used to train its models.
+  Nothing is added to your cellar until you review and save it.</p>
+
+  <h2>Optional sync</h2>
+  <p>If you configure a sync server in Settings, your inventory is backed up
+  to that server so it can be restored later. Like any web server, it keeps
+  ordinary technical logs (such as connection IP addresses) for a short time.
+  If you never configure a server, your inventory never leaves your phone.</p>
+
+  <h2>What we never collect</h2>
+  <ul>
+    <li>No accounts, names, email addresses, or phone numbers</li>
+    <li>No location</li>
+    <li>No contacts or photo library access</li>
+    <li>No advertising identifiers, analytics, or tracking of any kind</li>
+  </ul>
+
+  <h2>Retention and deletion</h2>
+  <p>Data on your device is yours; deleting the app removes it. To ask about
+  or request deletion of anything held on a sync server, email
+  <a href="mailto:chris@hogan.org">chris@hogan.org</a>.</p>
+
+  <h2>Children</h2>
+  <p>Cellar Door is about wine and is not directed at children. It carries an
+  18+ age rating on the App Store.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted here with a new
+  effective date.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:chris@hogan.org">chris@hogan.org</a></p>
+
+  <hr>
+  <footer><a href="index.html">Cellar Door: Uncorked</a> &middot; &copy; 2026 Chris Hogan</footer>
+</body>
+</html>
