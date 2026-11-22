@@ -52,7 +52,7 @@
     your Apple ID email);</li>
     <li>a token from Apple, stored encrypted, used only to sign you out of
     Cellar Door at Apple when you delete your account;</li>
-    <li>your phone's name, so you can tell your signed-in devices apart;</li>
+    <li>your phone's model name (such as iPhone), kept with each sign-in;</li>
     <li>when you signed up and last signed in.</li>
   </ul>
   <p>The server does not keep your name or email address. If Apple shares
@@ -78,7 +78,7 @@
 
   <h2>Shared cellars</h2>
   <p>If you invite someone to your cellar, the server keeps the invite's
-  label and, once they join, their phone's name (or "Guest") and their
+  label and, once they join, their phone's model name (such as iPhone, or "Guest") and their
   role. A guest who links their Apple account is stored as a one-way hash of
   their Apple user id, not the id itself.</p>
 
@@ -121,11 +121,24 @@
   assistant connections, and signs Cellar Door out of your Apple account.
   To stop a membership, cancel it in your Apple account's subscriptions as
   well.</p>
-  <p>After deletion the server keeps, with no expiry, a one-way hash of
-  your Apple user id and of any subscription id, with the scan counts they
-  had used, so that deleting and re-creating an account does not reset free
-  scans. It also keeps the date of the deletion and whether Apple confirmed
-  the sign-out, with nothing that identifies you.</p>
+  <p>After deletion the server keeps, with no expiry, so that deleting and
+  re-creating an account does not reset what was used or undo a refund:</p>
+  <ul>
+    <li>a one-way hash of your Apple user id, with the free scans and free
+    drink-by estimates you had used, whether you had already been given or
+    refused the one-time pool of extra scans a new membership comes with,
+    the month of the deletion with the scans used in it, and the day of the
+    deletion with that day's drink-by estimates and the AI calls charged
+    that day without a result;</li>
+    <li>a one-way hash of each subscription that was given that one-time
+    pool, or had been refunded or revoked, with whether the pool was given
+    and, after a refund, when Apple signed it;</li>
+    <li>the date of the deletion and whether Apple confirmed the sign-out,
+    with nothing that identifies you.</li>
+  </ul>
+  <p>These hashes cannot be reversed, but anyone who already has your Apple
+  user id or a subscription id could check it against them, so they are
+  pseudonymous, not anonymous.</p>
 
   <h2>What we never collect</h2>
   <ul>
@@ -139,8 +152,9 @@
   carries an 18+ age rating on the App Store.</p>
 
   <h2>Your choices</h2>
-  <p>You can use the app without an account, disconnect assistants and
-  delete your account at any time in the app. To ask what we hold about
+  <p>You can use the app without an account, turn AI features off in
+  Settings, AI features, disconnect assistants and delete your account at
+  any time in the app. To ask what we hold about
   you, or for anything else, email <a href="mailto:support@cellardooruncorked.com">support@cellardooruncorked.com</a>.</p>
 
   <h2>Changes</h2>
